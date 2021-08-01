@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:id="@+id/numberEntry"
+        app:hintAnimationEnabled="true"
+        app:helperText="Enter your number here"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/numberEntry"
+        android:id="@+id/whatsappBtn"
+        android:text="Whatsapp"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/numberEntry"
+        android:id="@+id/telegramBtn"
+        android:text="Telegram"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
