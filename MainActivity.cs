@@ -42,9 +42,9 @@ namespace Sender
 
         private void Whatsapp_Click(object sender, System.EventArgs e)
         {
+            number = phone.Text;
             if (!string.IsNullOrEmpty(number))
             {
-                number = phone.Text;
                 CheckNumber();
                 string url = $"https://api.whatsapp.com/send?phone=${number}";
 
